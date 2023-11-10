@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sel_cafeta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_c1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/transparent_background"
+                            android:clickable="false"
+                            android:onClick="selection"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_1"
+                            android:tag="1"
+                            tools:srcCompat="@drawable/icon_1" />
+
+                        <TextView
+                            android:id="@+id/txt_ex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cafeta E" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_c2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/transparent_background"
+                            android:onClick="selection"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_2"
+                            android:tag="2"
+                            tools:srcCompat="@drawable/icon_2" />
+
+                        <TextView
+                            android:id="@+id/txt_cita"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cafeta Der" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_c3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/transparent_background"
+                            android:onClick="selection"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_3"
+                            android:tag="3"
+                            tools:srcCompat="@drawable/icon_3" />
+
+                        <TextView
+                            android:id="@+id/txt_study"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sartén y Mango" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_c4"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/transparent_background"
+                            android:onClick="selection"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_5"
+                            android:tag="4"
+                            tools:srcCompat="@drawable/icon_5" />
+
+                        <TextView
+                            android:id="@+id/txt_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gutza" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/ly_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_c_back"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/transparent_background"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_back"
+                            tools:srcCompat="@drawable/icon_back" />
+
+                        <TextView
+                            android:id="@+id/txt_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Salir" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
