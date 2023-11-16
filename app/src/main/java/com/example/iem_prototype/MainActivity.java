@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.TextView;
 
@@ -11,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView btn_inicio;
     TextView btn_ext;
+    TextView txt_qa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_inicio =  findViewById(R.id.btn_inicio);
         btn_ext = findViewById(R.id.btn_ext);
+        txt_qa = findViewById(R.id.txt_qa);
 
         btn_inicio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,5 +45,12 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        String qa = "Preguntas Frecuentes";
+
+        SpannableString spannableString = new SpannableString(qa);
+        spannableString.setSpan(new UnderlineSpan(), 0, qa.length(), 0);
+
+        txt_qa.setText(spannableString);
     }
 }

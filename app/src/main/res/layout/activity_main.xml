@@ -14,6 +14,12 @@
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="40dp">
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_logo" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,6 +50,13 @@
             android:text="Persona Externa"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_qa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Preguntas Frecuentes." />
 
     </LinearLayout>
 

@@ -14,7 +14,6 @@ import java.util.List;
 public class Menu_Cafeta extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private CustomAdapter adapter;
 
 
     @Override

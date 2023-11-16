@@ -120,6 +120,40 @@
             android:layout_marginBottom="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
+            android:text="Elija el día"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:text="dd/mm" />
+
+            <ImageView
+                android:id="@+id/img_cal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="mostrarCalendario"
+                android:src="@drawable/icon_calendar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_horarios2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:text="Horarios Disponibles"
             android:textSize="16sp" />
 
@@ -133,14 +167,16 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
 
                         <TextView
                             android:id="@+id/txt_h1"
@@ -175,7 +211,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <TextView
@@ -237,6 +273,13 @@
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Atrás" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
